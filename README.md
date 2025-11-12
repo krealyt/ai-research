@@ -88,27 +88,25 @@ visualization is the best way to manage this complexity.
 
 #### Folder example
 
+```
 /experiments
-|
-└───/email_categorization
-|   |
-|   └───/vertex_ai_gemini_pro
-|   |   |   prompt_v1.txt
-|   |   |   results.md  <-- Contains detailed analysis and tables
-|   |   |   run_data.json
-|   |
-|   └───/local_llama3
-|       |   prompt_v1.txt
-|       |   prompt_v2.txt
-|       |   results.md
-|       |   run_data.json
-|
-└───/code_generation
-    |
-    └───/...
+└── email_categorization
+    ├── vertex_ai_gemini_pro
+    │   ├── prompt_v1.txt
+    │   ├── results.md  <-- Contains detailed analysis and tables
+    │   └── run_data.json
+    └── local_llama3
+        ├── prompt_v1.txt
+        ├── prompt_v2.txt
+        ├── results.md
+        └── run_data.json
+└── code_generation
+    └── ...
+```
 
 #### YAML example
 
+```
 experiment_id: 001
 task: "Categorizing support emails"
 architecture: "Local-only with Ollama"
@@ -123,7 +121,7 @@ behavior:
   metrics:
     processing_time_seconds: 2.5
     cost: 0.0
-
+```
 
 ### 2. Visualization techniques
 
